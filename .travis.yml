@@ -6,6 +6,10 @@ install: true
 matrix: 
   include: 
   - jdk: oraclejdk9
+  
+branches:
+  only:
+    - master
 
 script: 
   - git config --global push.default simple
